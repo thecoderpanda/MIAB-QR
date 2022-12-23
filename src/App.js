@@ -1,6 +1,9 @@
 import React from 'react';
 import { Button, Form, FormGroup, Label, Input, Container, Row, Col } from 'reactstrap';
 import { QRCodeSVG } from 'qrcode.react';
+import Box from '@mui/material/Box';
+import TextField from '@mui/material/TextField';
+
 
 import html2canvas from 'html2canvas';
 import jsPDF from 'jspdf';
@@ -85,7 +88,8 @@ class App extends React.Component {
                 Hi There To Generate QR Code fill in the below form.
               </p>
               <h3>Meetup Information</h3>
-              <Form onSubmit={this.handleSubmit}>
+              
+              {/* <Form onSubmit={this.handleSubmit}>
                 <FormGroup>
                   <Label for="name">Alchemist Name</Label>
                   <Input type="text" placeholder="Enter Name" />
@@ -105,7 +109,7 @@ class App extends React.Component {
                 <Button type="submit">
                   Generate QR Code
                 </Button>
-              </Form>
+              </Form> */}
             </Col>
             <Col>
               <div id="print-this" >
